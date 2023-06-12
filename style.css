@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("arka-plan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#genel{
+    position: relative;
+}
+
+.baslat-btn a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.genel_h2{
+    font-size: 12px;
+    color: #fff;
+}
+
+.genel_h2 span{
+    font-size: 12px;
+    color: #b36cd2;
+    font-weight: bold;
+}
+
+#genel .ogeler{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.ogeler .oge{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    transition: background-color 0.1s;
+    padding: 0 0px;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+.ogeler .oge.bir-kere-tikla{
+    background-color: rgba(192, 192, 192, 0.5);
+    background-blend-mode: multiply;
+}
+
+.ogeler .oge:hover{
+    background-color: rgba(192, 192, 192, 0.5);
+    background-blend-mode: multiply;
+}
+
+.oge img{
+    width: 50px;
+    
+}
+
+.oge.sil{
+    display: none;
+}
+
+.oge span{
+    font-size: 13px;
+}
+
+#genel nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+    transition: all .2s;
+}
+
+nav button:hover{
+    background-color: #4e4e4e;
+}
+
+
+.zaman{
+    color: #fff;
+}
+
+#selection-area {
+    position: absolute;
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.2);
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
+.pc-ekrani{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color: #202020;
+    top: 50%;
+    left: 25%;
+    display: none;
+}
+
+.pc-ekrani.active{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    cursor: auto;
+}
+
+.pc-ekrani .ust{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc-ekrani .ust .resim{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.pc-ekrani .ust .resim img{
+    width: 30px;
+}
+
+.pc-ekrani .ust .resim span{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.pc-ekrani .cik button{
+    border: none;
+    background-color: transparent;
+    color: #afa9a9;
+    transition: all .2s ease;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-ekrani .cik button:hover{
+    background-color: red;
+}
+
+.pc-ekrani .cik button:hover span{
+    color: #fff;
+}
+
+.pc-ekrani .cik button span{
+    font-weight: 200;
+}
+
+.konum{
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    justify-content: space-around;
+}
+
+.konum .tuslar{
+    display: flex;
+}
+
+.tuslar span{
+    color: #9e9b9b;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+.konum-yazi{
+    border: 1px solid #706d6d;
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 0 2px 5px;
+}
+
+.konum-yazi .resim{
+    width: 30px;
+}
+
+.konum-yazi span{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.pc-ekrani .projeler-kismi{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.pc-ekrani .projeler-kismi .proje-bir{
+    margin: 5px 10px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-ekrani .projeler-kismi .proje-bir:hover{
+    background-color: rgba(242, 236, 236, 0.092);
+    background-blend-mode: multiply;
+}
+
+.pc-ekrani .projeler-kismi .proje-bir img{
+    width: 100%;
+}
+
+.pc-ekrani .projeler-kismi .proje-bir a{
+    text-decoration: none;
+    color: #fff;
+    cursor: auto;
+    text-align: center;
+}
+
+.pc-ekrani .projeler-kismi .proje-bir a span{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.nav-alt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 2px;
+}
+
+.nav-alt h2{
+    color: #fff;
+    font-weight: 200;
+    margin-left: 10px;
+    font-size: 12px;
+}
